@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Print ansible version
       debug:
-        msg: "Hello World!"
+        msg: "Ansible version is  {{ ansible_version.full }}"
 
